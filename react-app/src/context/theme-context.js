@@ -10,7 +10,7 @@ export const useTheme = () => useContext(ThemeContext);
 //Export Theme Provider
 export default function ThemeProvider(props) {
     //Default mode is light
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState(localStorage.getItem('DARK_MODE'));
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>
