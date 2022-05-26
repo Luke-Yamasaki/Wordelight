@@ -6,7 +6,7 @@ export const Navbar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.theme === 'light' ? 'white' : '#191919'};
+    border-bottom: 1px solid #3a3a3c;
 `;
 
 export const NavList = styled.ul`
@@ -18,7 +18,7 @@ export const NavList = styled.ul`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    filter: ${props => props.theme === 'dark' ? 'invert()' : 'none'};
+    filter: ${props => props.theme === 'dark' ? 'invert(1)' : 'none'};
 `;
 
 export const NavItems = styled.li`
