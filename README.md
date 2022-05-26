@@ -44,10 +44,10 @@ Create-react-app version:
 1. We will slightly adjust the high contrast colors in Adobe Color.
 2. If users already like the default colors, we do not need to invest time changing the default green and yellow.
 3. We will convert the brand colors to a JavaScript object that we can key into based on React context.
-3. We will employ styled-components to adapt to React context.
-4. We will simply change the font colors and background colors based on light/dark mode.
-5. If local storage helper functions are not available, we will write new ones in the utils directory.
-6. Test with users and see if the new colors need adjustments or the app is ready for shipping.
+4. We will employ styled-components to adapt to React context.
+5. We will simply change the font colors and background colors based on light/dark mode.
+6. If local storage helper functions are not available, we will write new ones in the utils directory.
+7. Test with users and see if the new colors need adjustments or the app is ready for shipping.
 
 Server-side rendering version:
 (Min 4 steps, max 6 steps. Approx. 6~7 hours. Project base cost: $700, expedited cost: $500)
