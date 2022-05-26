@@ -1,7 +1,20 @@
+//Hooks
+import { useEffect } from 'react';
+import { useTheme } from 'styled-components';
+
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const {theme, setTheme} = useTheme();
+
+  useEffect(() => {
+    const themePreference = localStorage.getItem("DARK_MODE");
+    if(themePreference) {
+      setTheme('dark')
+    }
+  },[theme]);
+
   return (
     <div className="App">
       <header className="App-header">
