@@ -30,3 +30,17 @@ and dark mode palettes must strike a balance between maintaining contrast with a
 How can we fix this?
 
 There are many avenues that you can take, but allow me to walk you through a rather simple path.
+The main fix is to change the font color from white to black for light mode, and adjust the blue
+and organe-brown color palette for dark mode. Just those two fixes and we will increase the light
+mode contrast scores for the blue color by 568% and the orang-brown color by 280%. For dark mode,
+the contrast scores will increase for the blue color by 270% and the orange-brown color by 165%.
+
+Here's the plan:
+
+Create-react-app version:
+
+1. We will slightly adjust the high contrast colors in Adobe Color.
+2. If users already like the default colors, we do not need to invest time changing the default green and yellow colors.
+3. We will convert the brand colors to a JavaScript object that we can key into based on React context.
+3. We will employ styled-components to adapt to React context.
+4. We will simply change the
