@@ -38,9 +38,23 @@ the contrast scores will increase for the blue color by 270% and the orange-brow
 Here's the plan:
 
 Create-react-app version:
+(Min 4 steps, max 6 steps. Approx. 3~4 hours. Project base cost: $500, expedited cost: $350)
+(Upgraded service: designer/developer clickable documentations in Adobe XD. Approx. full 9 hour day. cost: $1000)
 
 1. We will slightly adjust the high contrast colors in Adobe Color.
-2. If users already like the default colors, we do not need to invest time changing the default green and yellow colors.
+2. If users already like the default colors, we do not need to invest time changing the default green and yellow.
 3. We will convert the brand colors to a JavaScript object that we can key into based on React context.
 3. We will employ styled-components to adapt to React context.
-4. We will simply change the
+4. We will simply change the font colors and background colors based on light/dark mode.
+5. If local storage helper functions are not available, we will write new ones in the utils directory.
+6. Test with users and see if the new colors need adjustments or the app is ready for shipping.
+
+Server-side rendering version:
+(Min 4 steps, max 6 steps. Approx. 6~7 hours. Project base cost: $700, expedited cost: $500)
+
+1. We will slightly adjust the high contrast colors in Adobe Color.
+2. If users already like the default colors, we do not need to invest time changing the default green and yellow.
+3. If local storage helper functions are not available, we will write new ones in the utils directory.
+4. We will create a CSS-module file to eliminate global style runtimes and avoid classname collisions.
+5. We will chain conditional statements to determine classnames.
+6. Test with users and see if the new colors need adjustments or the app is ready for shipping.
